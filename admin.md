@@ -14,3 +14,5 @@ This is my first time using a flat file syste, so far I've found it to be:
 <li>Great workflow</li>
 <li>Free hosting and development integration via Github</li>
 </ul>
+
+Check out our <a href="/asdfasdfa">404 page</a>.
