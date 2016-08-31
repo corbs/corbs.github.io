@@ -5,7 +5,7 @@ permalink: /home
 <div class="hero" style="background-color:#eee; height:100%;">
   <div class="wrapper">
   <h1>What do I do (3 or 4 or 5 column - with icons)</h1>
-  Branding [View work], Print layout [View work], Illustrations [view work], Web Design, Photo Editing [view work].
+  Branding [View work], Print layout [View work], Illustrations (vector ala rocketship)[view work], Web Design, Photo Editing [view work].
   </div>
 </div>
 
@@ -44,8 +44,14 @@ Check out our <a href="/asdfasdfa">404 page</a>.
   </div>
 </div>
 
-
 <div class="fullscreen" style="background-color:#ddd;">
+  <div class="wrapper">
+<h1>Traditional hand drawings</h1>
+I love digital painting. Here's an example of a sketch in youtube format. Here's a link to see some more of them.
+  </div>
+</div>
+
+<div class="fullscreen" style="background-color:#eee;">
   <div class="wrapper">
 Contact me
 Contact details and form on left. Custom Google Map pin on the right.
