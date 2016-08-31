@@ -1,14 +1,18 @@
----
-layout: default
----
-<h1>This is the homepage, editable from _layouts/home</h1>
-<div class="wrapper">
+<!DOCTYPE html>
+<html>
 
-<h1><p>This is my top, most important content located at '_homepage/home_1'<br />Use this to add your main image, key message, hook.</h1>
+  {% include head.html %}
 
-</div>
-<div class="wrapper">
+  <body>
 
-<h2>Expand. Why am I worth a damn.</h2>
+    {% include header.html %}
 
-</div>
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

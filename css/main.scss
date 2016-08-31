@@ -15,7 +15,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #fefefe;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -27,7 +27,6 @@ $content-width:    1240px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
 
 
 // Use media queries like this:
@@ -42,7 +41,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
