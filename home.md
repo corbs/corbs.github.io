@@ -2,7 +2,9 @@
 layout: home
 permalink: /home
 ---
-<div class="hero" style="background-color:#eee; height:100%;">
+<div class="hero"></div>
+
+<div class="fullscreen" style="background-color:#eee;">
   <div class="wrapper">
   <h1>What do I do (3 or 4 or 5 column - with icons)</h1>
   Branding [View work], Print layout [View work], Illustrations (vector ala rocketship)[view work], Web Design, Photo Editing [view work].
@@ -20,8 +22,9 @@ permalink: /home
 
 <div class="fullscreen" style="background-color:#eee;">
   <div class="wrapper">
-  Featured Work [Featured] [Web] [Print] [Illustration]
+  <h1>Featured Work</h1>
   List of featured work from portfolio.
+  [Featured] [Web] [Print] [Illustration]
   </div>
 </div>
 
@@ -53,7 +56,14 @@ I love digital painting. Here's an example of a sketch in youtube format. Here's
 
 <div class="fullscreen" style="background-color:#eee;">
   <div class="wrapper">
-Contact me
+<h1>Let me buy you a drink</h1>
+Meet up in an informal setting. I'll be at the following location on the following date.
+ </div>
+</div>
+
+<div class="fullscreen" style="background-color:#ddd;">
+  <div class="wrapper">
+<h1>Contact me</h1>
 Contact details and form on left. Custom Google Map pin on the right.
   </div>
 </div>

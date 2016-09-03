@@ -172,10 +172,11 @@ pre {
     }
 }
 
-//Homepage Fullscreen
+//Homepage Fullscreen -c
 .hero {
   width: 100%;
-  height: 100%;
+  background-color: #afafaf;
+  height:600px;
 }
 .fullscreen {
   padding:20px 0;
