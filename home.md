@@ -2,7 +2,10 @@
 layout: home
 permalink: /home
 ---
-<div class="hero"></div>
+<div class="fullscreen" style="background-color:#eee;">
+  <div class="wrapper"><h1>I’m a graphic designer with an abiding love for everything digital. Creating beautiful, functional experiences across web and print.
+<p>Follow my <a href="*">thought process</a> during a project build.</p></h1>
+</div></div>
 
 <div class="fullscreen" style="background-color:#eee;">
   <div class="wrapper">
