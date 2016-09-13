@@ -1,5 +1,6 @@
-un---
+---
 layout: home
+title: Home
 permalink: /home
 ---
 <div class="hero">
