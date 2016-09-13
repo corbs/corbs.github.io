@@ -2,17 +2,21 @@
 
 .site-title {
 background: url('../img/corbin_NZ.svg');
-width:292px;
-height:45px;
+width:255px;
+height:40px;
 text-indent: -999999px;
 }
 
 .hero {
-  background-color: #afafaf;
-  min-height:600px;
+  background-color: #6fa0d4;
+  padding:50px 0;
+  font-size: 3.5em;
+  text-color:#fff;
+  text-decoration: uppercase;
+  font-weight: bolder;
 }
 
 .fullscreen {
-  padding:20px 0;
+
   width: 100%;
 }
