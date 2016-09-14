@@ -4,8 +4,7 @@ title: Home
 permalink: /home
 ---
 <div class="hero">
-  <div class="wrapper">Don’t focus on pretty.<br />Strive to create a thing that perfectly fulfils its function.
-<p>Follow my <a href="*">thought process</a> during a project build.</p>
+  <div class="wrapper">Don’t focus on pretty.<br />A designer’s goal is to communicate effectively.
 </div></div>
 
 <div class="fullscreen" style="background-color:#eee;">
