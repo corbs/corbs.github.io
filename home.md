@@ -7,6 +7,13 @@ permalink: /home
   <div class="wrapper">Don’t focus on pretty.<br />A designer’s goal is to communicate effectively.
 </div></div>
 
+<div class="fullscreen" style="background-color:#ddd;">
+  <div class="wrapper">
+<h1>Follow me:</h1>
+I’m Corbin, I am a Graphic Designer with a strong ability to solve problems and distil information into an accessible format.
+<p>Behance / Twitter / Facebook / Dribbble / Googleplus</p>
+</div></div>
+
 <div class="fullscreen" style="background-color:#eee;">
   <div class="wrapper">
   <h1>What do I do (3 or 4 or 5 column - with icons)</h1>
