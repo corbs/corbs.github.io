@@ -13,11 +13,22 @@
 .site-title {
     margin-bottom: 0;
     float: left;
+    position: relative;
+    width: 255px;
+    height: 40px;
+    text-indent: -999999px;
+    overflow: visible;
 
-    &,
-    &:visited {
-        color: $grey-color-light;
-    }
+      > svg {
+        position: absolute;
+        width: 100%;
+        top:0;
+        left:0;
+
+          path {
+              fill: $background-color;
+                }
+            }
 }
 
 .site-nav {
@@ -29,8 +40,12 @@
     }
 
     .page-link {
-        color: $grey-color-light;
+        color: $background-color;
         line-height: $base-line-height;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .15em;
+        font-size:.85em;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -49,10 +64,11 @@
 
         .menu-icon {
             display: block;
-      //      float: right;
+            margin-top: 12px;
+    //        float: right;
     //        width: 20px;
     //        height: 20px;
-    //      line-height: 40;
+    //        line-height: 40;
     //        padding-top: 10px;
     //        text-align: center;
 
@@ -60,8 +76,8 @@
                 width: 20px;
                 height: 20px;
 
-                path {
-                    fill: $grey-color-dark;
+                rect {
+                    fill: $background-color;
                 }
             }
         }

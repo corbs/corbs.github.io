@@ -2,14 +2,15 @@
 layout: home
 title: Home
 permalink: /home
+weight: 1
 ---
 <div class="hero">
-  <div class="wrapper">Don’t focus on pretty.<br />A designer’s goal is to communicate effectively.
+  <div class="wrapper">Don’t focus on pretty.<br />Great design communicates effectively.
 </div></div>
 
 <div class="fullscreen" style="background-color:#ddd;">
   <div class="wrapper">
-<h1>Follow me:</h1>
+  <p><strong>What’s the difference between a junior designer and a senior?</strong></p>Senior designers: Consistent work, Calm under pressure, Adaptable, Broader Skills and an ability to focus on building a great design rather than making a client happy.
 I’m Corbin, I am a Graphic Designer with a strong ability to solve problems and distil information into an accessible format.
 <p>Behance / Twitter / Facebook / Dribbble / Googleplus</p>
 </div></div>
