@@ -1,12 +1,8 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title: Corbin is a Graphic Designer from New Zealand
+### Site settings ###
+title: Corbin Featherstone is a Freelance Graphic Designer from Auckland New Zealand
 email: treehousefilms@gmail.com
 description: Graphic designer and digital freelancer based in New Zealand. Professional print, branding and WordPress theme customization. View my design portfolio or subscribe to our free Vector Graphics and Creative Suite Software Tutorials.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -14,5 +10,5 @@ url: "http://corbin.nz" # the base hostname & protocol for your site
 twitter_username: corbsoup
 github_username:  corbs
 
-# Build settings
+### Build settings ###
 markdown: kramdown

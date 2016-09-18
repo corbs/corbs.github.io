@@ -1,11 +1,13 @@
 ---
 layout: default
-permalink: /posts/
+permalink: /portfolio
+title: Portfolio
+navigation-weight: 0
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts!!</h1>
+  <h1 class="page-heading">Portfolio</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
