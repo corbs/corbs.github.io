@@ -26,6 +26,7 @@ I’m Corbin, I am a Senior Graphic Designer with many years experience navigati
 
 <div class="fullscreen" style="background-color:#ddd;">
   <div class="wrapper">
+  <img src="/img/icon_sw.svg" style="width:200px; display:block; padding-top:20px; margin:0 auto;">
   <h1>I’m not a Rockstar or a Ninja</h1>
   <p>If I was to pick a fictional character that best describes myself I would vehemently insist on being a straight-up Bobba Fett. My certainty in this matter has not been shaken in the slightest by my current design team assuring me I’m C3PO.</p>
   </div>
