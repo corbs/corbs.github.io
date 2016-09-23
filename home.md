@@ -3,7 +3,7 @@ layout: home
 permalink: /home
 ---
 <div class="hero">
-  <div class="wrapper">Don’t focus on pretty.<br />Great design communicates effectively.
+  <div class="wrapper">Don’t focus on pretty.<br />Communicate effectively.
 </div></div>
 
 <div class="fullscreen" style="background-color:#ddd;">
