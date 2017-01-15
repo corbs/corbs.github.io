@@ -2,8 +2,31 @@
 layout: home
 permalink: /home
 ---
+
+
+
+  ol {
+    > li {
+      background-color: #F4F5F7;
+      @include background-image( linear-gradient(to left, #FFF, #F4F5F7) );
+      float: left;
+      font-family: $lucida-grande;
+      position: relative;
+      @include transition( all 0.8s );
+
+      &::after {
+        content: " ";
+        height: 23px;
+        @include position( absolute, 10px -13px 0 0 );
+        @include transform( rotate(45deg) skew(20deg, 30deg) );
+        width: 23px;
+      }
+    }
+  }
+          
+<!-- commentted out Corbs
 <div class="hero">
-  <div class="wrapper">Your business is defined by your customer's experience.
+  <div class="wrapper">Communicate effectively.<br />Don't focus on pretty.
 </div></div>
 
 <div class="fullscreen" style="background-color:#ddd;">
@@ -81,3 +104,5 @@ Contact details and form on left. Custom Google Map pin on the right.
 </div>
 
 <h2>What am I looking for</h2>
+
+-->
