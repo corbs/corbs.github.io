@@ -8,7 +8,7 @@ permalink: /home
 
 <div class="fullscreen" style="background-color:#ddd;">
   <div class="wrapper">
-  <p><strong>What’s the difference between a junior designer and a senior?</strong></p>Senior designers: Consistent quality, Calm under pressure, Adaptable, Broader Skillset, will stabilize and support a team, and has a strong ability to focus on building a great design rather than making a client happy.
+  <p><strong>What’s the difference between a junior designer and a senior? I mean when it comes down to it really.</strong></p>Senior designers: Consistent quality, Calm under pressure, Adaptable, Broader Skillset, will stabilize and support a team, and has a strong ability to focus on building a great design rather than making a client happy.
 I’m Corbin, I am a Senior Graphic Designer with many years experience navigating large workloads and challenging environments. I’ve filled many roles within the creative process from web to video, 3D and print. I have a reputation for adapting to the needs of the team, solving problems and distilling information into an accessible format. Pumping out consistent high quality work.
 <p>Behance / Twitter / Facebook / Dribbble / Googleplus</p>
 </div></div>
