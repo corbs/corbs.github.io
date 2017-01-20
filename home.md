@@ -3,11 +3,9 @@ layout: home
 permalink: /home
 ---
 <div class="section">
-<p>But the truth is, it's not the idea, it's never the idea, it's always what you do with it.<br />
-Neil Gaiman | Journeys End</p>
-<a class="link button" href="/home">Bringing Ideas to Life <svg class="icon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg></a>
-<symbol id="icon-chevron-right" viewBox="0 0 14 32">
-<title>chevron-right</title><path class="path1" d="M4 6l-4 4 6 6-6 6 4 4 10-10-10-10z"></path></symbol>
+<h1 class="mont headline">"...the truth is, it's not the idea, it's never the idea, it's always what you do with it."</h1>
+<h4>Neil Gaiman | Journeys End</h4>
+<a class="link button mont" href="/home">Bringing Ideas to Life</a>
 </div>
 
 <div class="section">
