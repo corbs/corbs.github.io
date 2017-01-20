@@ -2,51 +2,51 @@
 layout: home
 permalink: /home
 ---
-<div class="section">
+<section class="section-home featured-home">
 <h1 class="mont headline">"...the truth is, it's not the idea, it's never the idea, it's always what you do with it."</h1>
 <h4>Neil Gaiman | Journeys End</h4>
 <a class="link button mont" href="/home">Bringing Ideas to Life</a>
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Synopsis of whole site
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 About Me
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Project Example
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Skills: Multi-disciplinary / Versatile Designer – 3D, Hand Sketching
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Work Ethic / Drive / Motivation
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Featured Work Item
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Value Add
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Quotes
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Hire Me
-</div>
+</section>
 
-<div class="section">
+<section class="section-home">
 Contact
-</div>
+</section>
 
 
 <!-- commentted out Corbs
