@@ -2,28 +2,53 @@
 layout: home
 permalink: /home
 ---
+<div class="section">
+<p>But the truth is, it's not the idea, it's never the idea, it's always what you do with it.<br />
+Neil Gaiman | Journeys End</p>
+<a class="link button" href="/home">Bringing Ideas to Life</a>
+</div>
+
+<div class="section">
+Synopsis of whole site
+</div>
+
+<div class="section">
+About Me
+</div>
+
+<div class="section">
+Project Example
+</div>
+
+<div class="section">
+Skills: Multi-disciplinary / Versatile Designer – 3D, Hand Sketching
+</div>
+
+<div class="section">
+Work Ethic / Drive / Motivation
+</div>
+
+<div class="section">
+Featured Work Item
+</div>
+
+<div class="section">
+Value Add
+</div>
+
+<div class="section">
+Quotes
+</div>
+
+<div class="section">
+Hire Me
+</div>
+
+<div class="section">
+Contact
+</div>
 
 
-
-  ol {
-    > li {
-      background-color: #F4F5F7;
-      @include background-image( linear-gradient(to left, #FFF, #F4F5F7) );
-      float: left;
-      font-family: $lucida-grande;
-      position: relative;
-      @include transition( all 0.8s );
-
-      &::after {
-        content: " ";
-        height: 23px;
-        @include position( absolute, 10px -13px 0 0 );
-        @include transform( rotate(45deg) skew(20deg, 30deg) );
-        width: 23px;
-      }
-    }
-  }
-          
 <!-- commentted out Corbs
 <div class="hero">
   <div class="wrapper">Communicate effectively.<br />Don't focus on pretty.

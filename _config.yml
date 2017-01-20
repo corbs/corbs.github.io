@@ -2,7 +2,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 ### Site settings ###
-title: Corbin Featherstone is a Freelance Graphic Designer from Auckland New Zealand
+title: Corbin Featherstone is a Freelance Graphic Designer based in Auckland New Zealand
 email: treehousefilms@gmail.com
 description: Graphic designer and digital freelancer based in New Zealand. Professional print, branding and WordPress theme customization. View my design portfolio or subscribe to our free Vector Graphics and Creative Suite Software Tutorials.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -12,3 +12,7 @@ github_username:  corbs
 
 ### Build settings ###
 markdown: kramdown
+
+### Custom settings -Corbs ###
+gem: bourbon
+gem: neat
