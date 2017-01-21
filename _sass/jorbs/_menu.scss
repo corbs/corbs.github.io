@@ -1,0 +1,20 @@
+.site-nav {
+    float: right;
+    line-height: 40px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .15em;
+        font-size:.83em;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}

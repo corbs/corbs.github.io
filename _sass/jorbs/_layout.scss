@@ -1,0 +1,27 @@
+.section
+
+.section-home {background:grey;}
+
+.featured-home {background:orange; color:#fff;}
+
+.site-title {
+    margin-bottom: 0;
+    float: left;
+    position: relative;
+    width: 255px;
+    height: 40px;
+    text-indent: -999999px;
+    overflow: visible;
+
+      > svg {
+        position: absolute;
+        width: 100%;
+        top:0;
+        left:0;
+
+          path {
+              fill: $colour-light;
+                }
+            }
+}
+.wrapper {clear:both;}

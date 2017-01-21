@@ -4,11 +4,16 @@ permalink: /home
 ---
 <section class="section-home featured-home">
 <h1 class="mont headline">"...the truth is, it's not the idea, it's never the idea, it's always what you do with it."</h1>
-<h4>Neil Gaiman | Journeys End</h4>
+<h4>Neil Gaiman | Personal Writings</h4>
 <a class="link button mont" href="/home">Bringing Ideas to Life</a>
 </section>
 
 <section class="section-home">
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 Synopsis of whole site
 </section>
 
