@@ -6,7 +6,11 @@ navigation-weight: 0
 ---
 
 <div class="home">
-
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
   <h1 class="page-heading">Portfolio</h1>
 
   <ul class="post-list">

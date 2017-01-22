@@ -9,32 +9,41 @@ permalink: /home
 </section>
 
 <section class="section-home">
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-Synopsis of whole site
+<h1>Summary of Site</h1>Graphic Designer & Website Frontend Professional Available for work
 </section>
 
 <section class="section-home">
-About Me
+<h1>About Me</h1>
+Senior Graphic Designer and Website Frontend Coder<br />
+<p>Multi-disciplinary versatile digital senior capable of fitting in with a team pumping out consistent high quality work.</p>Work Ethic / Drive / Motivation
+
 </section>
 
 <section class="section-home">
-Project Example
+<h1>Featured Project</h1>
+Follow my creative process during a build: Business Branding refresh (Kitsch?)
 </section>
 
 <section class="section-home">
-Skills: Multi-disciplinary / Versatile Designer – 3D, Hand Sketching
+<h1>Skills</h1>
+(Cards x 3 or 4)<br />
+<ul>
+<li>Graphic design, layout and branding. </li>
+<li>Website design and UI coding</li>
+<li>Original Illustrations </li>
+</ul>
+<h4><a href="/home"> See list of all skills</a> </h4>
+Photography and post production<br />
+Video editing and animation<br />
+3D<br />
 </section>
 
 <section class="section-home">
-Work Ethic / Drive / Motivation
+<h1>List of Software</h1> Indesign / Photoshop / etc
 </section>
 
 <section class="section-home">
-Featured Work Item
+<h1>Featured Work Items</h1>
 </section>
 
 <section class="section-home">
