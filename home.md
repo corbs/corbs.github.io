@@ -3,9 +3,8 @@ layout: home
 permalink: /home
 ---
 <section class="section-home featured-home">
-<h1 class="mont headline">"...the truth is, it's not the idea, it's never the idea, it's always what you do with it."</h1>
-<h4>Neil Gaiman | Personal Writings</h4>
-<a class="link button mont" href="/home">Bringing Ideas to Life</a>
+<h1 class="mont headline">"...the truth is, it's not the idea, it's never the idea, it's always what you do with it."</h1><br />
+<h4>Neil Gaiman | <a href="/home" style="color:#fff;"><em>Personal journal</em></a></h4>
 </section>
 
 <section class="section-home">
@@ -27,11 +26,10 @@ Follow my creative process during a build: Business Branding refresh (Kitsch?)
 <section class="section-home">
 <h1>Skills</h1>
 (Cards x 3 or 4)<br />
-<ul>
-<li>Graphic design, layout and branding. </li>
-<li>Website design and UI coding</li>
-<li>Original Illustrations </li>
-</ul>
+<div class="Grid--full large-Grid--fit">
+<div class="Grid-cell">Graphic design, layout and branding. </div>
+<div class="Grid-cell">Website design and UI coding</div>
+<div class="Grid-cell">Original Illustrations </div>
 <h4><a href="/home"> See list of all skills</a> </h4>
 Photography and post production<br />
 Video editing and animation<br />
