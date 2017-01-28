@@ -3,8 +3,13 @@
 ---
 @charset "utf-8";
 
-@import "vendors/bourbon/bourbon";
-@import "vendors/neat/neat";
+@import
+"vendors/bootstrap/scss/variables",
+"vendors/bootstrap/scss/mixins",
+"vendors/bootstrap/scss/grid"
+;
+
+/*  Jorbs
 
 @import
 "jorbs/variables",

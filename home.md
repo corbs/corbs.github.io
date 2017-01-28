@@ -8,52 +8,62 @@ permalink: /home
 </section>
 
 <section class="section-home">
-<h1>Summary of Site</h1>Graphic Designer & Website Frontend Professional Available for work
+  <h4>Welcome</h4>
+<h1>I'm a Digital Developer and all round designer completely in love with building the power of awesome. I've been freelancing for years, based in Auckland. Check out my work on this site and if you've got anything that needs the power of awesome. Hire me. A freelance Senior Designer based in Auckland New Zealand</h1>Graphic Designer & Website Frontend Professional Available for work
 </section>
 
 <section class="section-home">
-<h1>About Me</h1>
+<h4>About Me</h4>
+<h1>Corbin Featherstone</h1>
 Senior Graphic Designer and Website Frontend Coder<br />
-<p>Multi-disciplinary versatile digital senior capable of fitting in with a team pumping out consistent high quality work.</p>Work Ethic / Drive / Motivation
-
-</section>
+<p>Multi-disciplinary versatile digital senior capable of fitting in with a team pumping out consistent high quality work.</p></section>
 
 <section class="section-home">
-<h1>Featured Project</h1>
-Follow my creative process during a build: Business Branding refresh (Kitsch?)
+<h4>Featured Project</h4>
+<h1>Kitschen Branding</h1>
+<strong>[VIDEO]</strong> Follow my creative process during a build
 </section>
 
 <section class="section-home">
 <h1>Skills</h1>
 (Cards x 3 or 4)<br />
+<h4>Skills</h4>
 <div class="Grid--full large-Grid--fit">
-<div class="Grid-cell">Graphic design, layout and branding. </div>
-<div class="Grid-cell">Website design and UI coding</div>
-<div class="Grid-cell">Original Illustrations </div>
+<div class="Grid-cell">Branding</div>
+<div class="Grid-cell">Layout </div>
+<div class="Grid-cell">Website design and UI</div>
+<div class="Grid-cell">Photo production</div>
 <h4><a href="/home"> See list of all skills</a> </h4>
-Photography and post production<br />
-Video editing and animation<br />
-3D<br />
+</div>
+Illustration / painting [VIDEO]<br />
+Video production and editing<br />
+Animation<br />
+3D</section>
+
+<section class="section-home">
+<h4>List of Software</h4> Indesign / Photoshop / etc
 </section>
 
 <section class="section-home">
-<h1>List of Software</h1> Indesign / Photoshop / etc
+<h4>Featured Work Items</h4>
+Photo montage
 </section>
 
 <section class="section-home">
-<h1>Featured Work Items</h1>
+<h4>Value Add</h4>
+<h6>What’s the difference between a junior designer and a senior?</h6>
+Senior designers: Consistent quality, Calm under pressure, Adaptable, Broader Skillset, will stabilize and support a team, and has a strong ability to focus on building a great design rather than making a client happy.<br />
+I am a Senior Graphic Designer with many years experience navigating large workloads and challenging environments. I’ve filled many roles within the creative process from web to video, 3D and print. I have a reputation for adapting to the needs of the team, solving problems and distilling information into an accessible format. Pumping out consistent high quality work.
 </section>
 
 <section class="section-home">
-Value Add
+<h4>Quotes</h4>
+"Totally awesome"
 </section>
 
 <section class="section-home">
-Quotes
-</section>
-
-<section class="section-home">
-Hire Me
+<h4>Hire Me</h4>
+What I'm currently doing at this moment. What I'm after | When I am next available to work [link 'Hire']
 </section>
 
 <section class="section-home">

@@ -14,5 +14,3 @@ github_username:  corbs
 markdown: kramdown
 
 ### Custom settings -Corbs ###
-gem: bourbon
-gem: neat
