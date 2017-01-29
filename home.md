@@ -15,7 +15,7 @@ permalink: /home
 <h4>About Me</h4>
 <h1>Corbin Featherstone</h1>
 Senior Graphic Designer and Website Frontend Coder<br />
-<p>Multi-disciplinary versatile digital senior capable of fitting in with a team pumping out consistent high quality work.</p></section>
+<p>Multi-disciplinary versatile digital senior capable of fitting in with a team pumping out consistent high quality work.</p>
 </div> <!--/container-->
 </div> <!--/full-row-->
 
