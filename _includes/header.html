@@ -1,10 +1,10 @@
-<header class="site-header">
+<header class="container-fluid">
 
-  <div class="wrapper">
+  <div class="nav row">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}{% include _images/title.svg %}</a>
+    <a class="site-title col-sm" href="{{ site.baseurl }}/">{{ site.title }}{% include _images/title.svg %}</a>
 
-    <nav class="site-nav">
+    <nav class="site-nav col-sm">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
@@ -12,6 +12,6 @@
         {% endfor %}
     </nav>
 
-  </div>
+  </div> <!-- / navigation -->
 
 </header>
