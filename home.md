@@ -7,25 +7,25 @@ permalink: /home
 <div class="container">
   <h4>Welcome</h4>
 <h1>I'm a Digital Developer and all round designer completely in love with building the power of awesome. I've been freelancing for years, based in Auckland. Check out my work on this site and if you've got anything that needs the power of awesome. Hire me. A freelance Senior Designer based in Auckland New Zealand</h1>Graphic Designer & Website Frontend Professional Available for work
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 <h4>About Me</h4>
 <h1>Corbin Featherstone</h1>
 Senior Graphic Designer and Website Frontend Coder<br />
-<p>Multi-disciplinary versatile digital senior capable of fitting in with a team pumping out consistent high quality work.</p>
-</div> <!--/container-->
-</div> <!--/row-full-->
+Multi-disciplinary versatile digital senior capable of fitting in with a team pumping out consistent high quality work.
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 <h4>Featured Project</h4>
 <h1>Kitschen Branding</h1>
 <strong>[VIDEO]</strong> Follow my creative process during a build
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
@@ -35,32 +35,32 @@ Senior Graphic Designer and Website Frontend Coder<br />
 <div class="col">Layout </div>
 <div class="col">Website design and UI</div>
 <div class="col">Photo production</div>
-</div> <!--/row-->
+</div>
 <h4><a href="/home"> See list of all skills</a> </h4>
 Illustration / painting [VIDEO]<br />
 Video production and editing<br />
 Animation<br />
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 <h4>List of Software</h4> Indesign / Photoshop / etc
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 <h4>Featured Work Items</h4>
 Photo montage
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 <h4>Top Tips</h4>[LINK to TOP TIPS]
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 
 <div class="row-full">
@@ -69,25 +69,25 @@ Photo montage
 <h6>What’s the difference between a junior designer and a senior?</h6>
 Senior designers: Consistent quality, Calm under pressure, Adaptable, Broader Skillset, will stabilize and support a team, and has a strong ability to focus on building a great design rather than making a client happy.<br />
 I am a Senior Graphic Designer with many years experience navigating large workloads and challenging environments. I’ve filled many roles within the creative process from web to video, 3D and print. I have a reputation for adapting to the needs of the team, solving problems and distilling information into an accessible format. Pumping out consistent high quality work.
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 <h4>Quotes</h4>
 "Totally awesome"
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 <h4>Hire Me</h4>
 What I'm currently doing at this moment. What I'm after | When I am next available to work [link 'Hire']
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>
 
 <div class="row-full">
 <div class="container">
 Contact
-</div> <!--/container-->
-</div> <!--/row-full-->
+</div>
+</div>

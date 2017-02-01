@@ -1,8 +1,11 @@
 
-.featured {background:orange; color:#fff; height:100%;
+.featured {background:orange;
+  /* Orange: #ffa000
+     Dark Orange: #ff5000; */
+ color:#fff; height:100%;
   svg {fill:#fff;}
   a {color:#fff;}
 }
-.row-full {padding:30px 0; border-bottom:1px solid #ddd; background:fefefe;
-
+.row-full {padding:30px 0; border-bottom:1px solid #ddd; background:#fefefe;
 }
+.col {background:#fff;}
