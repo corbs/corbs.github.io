@@ -1,11 +1,22 @@
 
-.featured {background:orange;
-  /* Orange: #ffa000
-     Dark Orange: #ff5000; */
- color:#fff; height:100%;
+.featured {
+     background:#ffa000;
+     background: -webkit-linear-gradient(left top, #ffa000, #ff5000); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(bottom right, #ffa000, #ff5000); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(bottom right, #ffa000, #ff5000); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(to bottom right, #ffa000, #ff5000); /* Standard syntax */
+     color:#fff; height:100%;
   svg {fill:#fff;}
   a {color:#fff;}
 }
-.row-full {padding:30px 0; border-bottom:1px solid #ddd; background:#fefefe;
-}
-.col {background:#fff;}
+
+.grad-box {
+  background: #ffa000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/}
+
+.row-full {padding:30px 0; border-bottom:1px solid #ddd; background:#fefefe;}
+
+.quote {background-color:$text-color; color:$colour-light;}

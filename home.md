@@ -79,6 +79,13 @@ I am a Senior Graphic Designer with many years experience navigating large workl
 </div>
 </div>
 
+<div class="row-full quote">
+<div class="container">
+<h1>To escape criticism—do nothing, say nothing, be nothing.</h1>
+—Elbert Hubbard
+</div>
+</div>
+
 <div class="row-full">
 <div class="container">
 <h4>Hire Me</h4>
