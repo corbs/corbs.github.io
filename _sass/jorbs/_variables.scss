@@ -6,8 +6,11 @@
      background: linear-gradient(to bottom right, #ffa000, #ff5000); /* Standard syntax */
      color:#fff; height:100%;
      overflow:hidden;
+     position:relative;
+     height:100vh;
   svg {fill:#fff;}
   a {color:#fff;}
+
 }
 
 header {overflow:hidden;}
@@ -31,7 +34,8 @@ background: -moz-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,0.2)
 background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.2)); /*Standard*/
 }
 .strips, .strips span {
-position: absolute;
+position:absolute;
 height: 600px;
-width: 800px;
+width: 1200px;
+overflow: hidden;
 }
