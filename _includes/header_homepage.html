@@ -2,6 +2,11 @@
 
   <div class="strips">
     <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
 <div class="container">
@@ -9,7 +14,7 @@
   <div class="row">
     <a class="site-title col-sm" href="{{ site.baseurl }}/">{{ site.title }}{% include _images/title.svg %}</a>
 
-    <nav class="site-nav col-sm">
+    <nav class="nav col-sm">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link mont" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
