@@ -1,4 +1,4 @@
 ---
 layout: juju
-permalink: /bad_juju
+permalink: /badjuju
 ---
