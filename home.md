@@ -6,7 +6,7 @@ permalink: /home
 <div class="row-full">
 <div class="container">
   <h4>Welcome</h4>
-<h1>I'm a Digital Developer and all round designer completely in love with building the power of awesome. I've been freelancing for years, based in Auckland. Check out my work on this site and if you've got anything that needs the power of awesome. Hire me. A freelance Senior Designer based in Auckland New Zealand</h1>Graphic Designer & Website Frontend Professional Available for work
+<h1>I'm a Digital Developer and all round designer completely in love with building the power of awesome. I'm a freelance Senior Designer based in Auckland New Zealand</h1>Graphic Designer & Website Frontend Professional
 </div>
 </div>
 
