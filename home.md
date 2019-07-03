@@ -23,7 +23,7 @@ Multi-disciplinary versatile digital senior capable of fitting in with a team pu
 <div class="container">
 <h4>Featured Project</h4>
 <h1>Kitschen Branding</h1>
-<strong>[VIDEO]</strong> Follow my creative process during a build
+<strong>[VIDEO]</strong> Watch recent projects
 </div>
 </div>
 
