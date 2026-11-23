@@ -1,4 +1,0 @@
----
-layout: juju
-permalink: /badjuju
----
