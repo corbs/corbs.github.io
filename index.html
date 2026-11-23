@@ -26,57 +26,67 @@ body {
 	outline: none;
 }
 
-#status, #status-splash, #status-progress {
-	position: absolute;
-	left: 0;
-	right: 0;
-}
-
-#status, #status-splash {
-	top: 0;
-	bottom: 0;
-}
-
+/* Loading screen: a blank black page with SEA DRAGON in the game's own pixel font (sea blue), centred, and a
+   blocky load bar under it. The stage is 336x216 CSS px and is scaled up in whole steps by the script below. */
 #status {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	background-color: #000000;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	visibility: hidden;
 }
 
-#status-splash {
-	max-height: 100%;
-	max-width: 100%;
-	margin: auto;
+/* Light bleed: a soft halo of the same sea blue, fainter than the letters around the text and the filled blocks. */
+#stage {
+	--bleed: drop-shadow(0 0 3px rgba(8, 47, 202, 0.55)) drop-shadow(0 0 9px rgba(8, 47, 202, 0.4));
+	position: relative;
+	flex: none;
+	width: 336px;
+	height: 216px;
+	image-rendering: pixelated;
+	transform-origin: center center;
 }
 
-#status-splash.show-image--false {
-	display: none;
-}
-
-#status-splash.fullsize--true {
-	height: 100%;
-	width: 100%;
-	object-fit: contain;
-}
-
-#status-splash.use-filter--false {
+#title {
+	filter: var(--bleed);
+	position: absolute;
+	left: 128px;
+	top: 98px;
+	width: 80px;
+	height: 8px;
 	image-rendering: pixelated;
 }
 
-#status-progress, #status-notice {
-	display: none;
+/* 20 blocks of 7 px with a 1 px gap. The empty track is dim, the filled part is sea blue. */
+#bar-track, #bar-fill {
+	position: absolute;
+	left: 88px;
+	top: 118px;
+	height: 8px;
+	background-image: repeating-linear-gradient(90deg, currentColor 0 7px, transparent 7px 8px);
 }
 
-#status-progress {
-	bottom: 10%;
-	width: 50%;
-	margin: 0 auto;
+#bar-track {
+	width: 160px;
+	color: rgba(8, 47, 202, 0.3);
 }
 
+#bar-fill {
+	width: 0;
+	color: #082fca;
+	filter: var(--bleed);
+}
 #status-notice {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 8%;
 	background-color: #5b3943;
 	border-radius: 0.5rem;
 	border: 1px solid #9b3943;
@@ -104,36 +114,80 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--false fullsize--true use-filter--true" src="index.png" alt="">
-			<progress id="status-progress"></progress>
+			<div id="stage">
+				<canvas id="title" width="80" height="8"></canvas>
+				<div id="bar-track"></div>
+				<div id="bar-fill"></div>
+			</div>
 			<div id="status-notice"></div>
 		</div>
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":459824,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":460992,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
 	const statusOverlay = document.getElementById('status');
-	const statusProgress = document.getElementById('status-progress');
+	const stage = document.getElementById('stage');
+	const barFill = document.getElementById('bar-fill');
 	const statusNotice = document.getElementById('status-notice');
+
+	const BLOCKS = 20;
+	const BLOCK_PX = 8;
 
 	let initializing = true;
 	let statusMode = '';
+	let waiting = null;   // timer for the moving blocks, used while the total size is not known
+
+	// Whole-number scaling keeps the blocks crisp; on a small screen it shrinks to fit.
+	function fitStage() {
+		const s = Math.min(window.innerWidth / 336, window.innerHeight / 216) * 0.9;
+		stage.style.transform = 'scale(' + (s >= 2 ? Math.floor(s) : Math.max(s, 0.5)) + ')';
+	}
+	window.addEventListener('resize', fitStage);
+	fitStage();
+
+	// "SEA DRAGON" from the game's label font atlas (8x8 cells), tinted sky blue.
+	(function () {
+		const CHARS = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ:.- ';
+		const TEXT = 'SEA DRAGON';
+		const atlas = new Image();
+		atlas.onload = function () {
+			const c = document.getElementById('title');
+			const g = c.getContext('2d');
+			g.imageSmoothingEnabled = false;
+			for (let i = 0; i < TEXT.length; i++) {
+				const k = CHARS.indexOf(TEXT[i]);
+				if (k >= 0 && TEXT[i] !== ' ') {
+					g.drawImage(atlas, k * 8, 0, 8, 8, i * 8, 0, 8, 8);
+				}
+			}
+			g.globalCompositeOperation = 'source-in';
+			g.fillStyle = '#082fca';
+			g.fillRect(0, 0, c.width, c.height);
+		};
+		atlas.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAICAYAAACI7CYfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVGhD7ZBbbsMwDAR9/0u3IAo6qykfkhKjRuH5yu4sbSPHcRzHF7COzLhs03kn8uPli2pTOafaqHvX0xnqo03ljM4bsz7aRC7L2kXOyTarmdCvZu1mnKE+2lTOUN9t2Dv0d8/E/Z/DD2LWjr263cyeLuqUzhPu/1smq341d70SbbTrfIR7EnnN9HfJGdmO/d0yyXzWX46+2H9HH5L1pNtF3rsZZ0Reu4xoy+6vM6HvMvm0Z+56Jdp4Fzn17J3x+sWqv0vOyHbsP521i9yMdypfuUs5vxpkO/ZKtTkfnPy5/J3BjWdlvPhhxmUbeqNyRuXPBzffZdBnWTmPN70x67ljr0Sb84HJbeUMvVfouY18lRV31Z5ZOY+TDb2ROfa7mbjnjr3zrt/Fn0u4S+FR9oCsdzrvcOeZjFcv6LucdQ4dM6H/dCb0XSarfjV3vRJtvIucevYO/dWZuCeZH69/k+1m+91M3Ecbdc6uc2Y2l8AXM3e9seKYlcixW81Z59AxE/q7ZbLqV/NKH21WfAT91Zmoj7adJ9lmtmfWbsY59Fne7Um1c5f5t9EXRC+pPJ1TbdQpmR+v9z17Z7z+vas8uywr53GyqZzReYNeb8h4GT8/y9pFjj5zXSb0u1m7ymlHxusf6LqsuFNm3Mym61fzbE+4q9i9e3h4eHgo+AbL2oJDaseRFAAAAABJRU5ErkJggg==';
+	}());
+	function showBlocks(n) {
+		barFill.style.width = (Math.max(0, Math.min(BLOCKS, n)) * BLOCK_PX) + 'px';
+	}
 
 	function setStatusMode(mode) {
 		if (statusMode === mode || !initializing) {
 			return;
 		}
 		if (mode === 'hidden') {
+			if (waiting !== null) {
+				clearInterval(waiting);
+			}
 			statusOverlay.remove();
 			initializing = false;
 			return;
 		}
 		statusOverlay.style.visibility = 'visible';
-		statusProgress.style.display = mode === 'progress' ? 'block' : 'none';
+		stage.style.display = mode === 'notice' ? 'none' : 'block';
 		statusNotice.style.display = mode === 'notice' ? 'block' : 'none';
 		statusMode = mode;
 	}
@@ -202,11 +256,15 @@ const engine = new Engine(GODOT_CONFIG);
 		engine.startGame({
 			'onProgress': function (current, total) {
 				if (current > 0 && total > 0) {
-					statusProgress.value = current;
-					statusProgress.max = total;
-				} else {
-					statusProgress.removeAttribute('value');
-					statusProgress.removeAttribute('max');
+					if (waiting !== null) {
+						clearInterval(waiting);
+						waiting = null;
+					}
+					showBlocks(Math.floor(BLOCKS * current / total));
+				} else if (waiting === null) {
+					// Size not known yet: run a few blocks back and forth.
+					let n = 0;
+					waiting = setInterval(() => showBlocks(++n % (BLOCKS + 1)), 90);
 				}
 			},
 		}).then(() => {
@@ -217,4 +275,3 @@ const engine = new Engine(GODOT_CONFIG);
 		</script>
 	</body>
 </html>
-
