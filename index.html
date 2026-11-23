@@ -73,17 +73,17 @@ body {
 	image-rendering: pixelated;
 }
 
-/* 20 blocks of 7 px with a 1 px gap. The empty track is dim, the filled part is sea blue. */
+/* 22 blocks (20 for the real loading progress, 2 filled in just before the start screen) of 7 px with a 1 px gap. The empty track is dim, the filled part is sea blue. */
 #bar-track, #bar-fill {
 	position: absolute;
-	left: 88px;
+	left: 80px;
 	top: 118px;
 	height: 8px;
 	background-image: repeating-linear-gradient(90deg, currentColor 0 7px, transparent 7px 8px);
 }
 
 #bar-track {
-	width: 160px;
+	width: 176px;
 	color: rgba(8, 47, 202, 0.3);
 }
 
@@ -146,7 +146,8 @@ const engine = new Engine(GODOT_CONFIG);
 	const barFill = document.getElementById('bar-fill');
 	const statusNotice = document.getElementById('status-notice');
 
-	const BLOCKS = 20;
+	const BLOCKS = 20;        // blocks that follow the real loading progress
+	const EXTRA_BLOCKS = 2;   // filled in just before the start screen, only if loading finished early
 	const BLOCK_PX = 8;
 
 	let initializing = true;
@@ -196,7 +197,7 @@ const engine = new Engine(GODOT_CONFIG);
 		atlas.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAICAYAAACI7CYfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVGhD7ZBbbsMwDAR9/0u3IAo6qykfkhKjRuH5yu4sbSPHcRzHF7COzLhs03kn8uPli2pTOafaqHvX0xnqo03ljM4bsz7aRC7L2kXOyTarmdCvZu1mnKE+2lTOUN9t2Dv0d8/E/Z/DD2LWjr263cyeLuqUzhPu/1smq341d70SbbTrfIR7EnnN9HfJGdmO/d0yyXzWX46+2H9HH5L1pNtF3rsZZ0Reu4xoy+6vM6HvMvm0Z+56Jdp4Fzn17J3x+sWqv0vOyHbsP521i9yMdypfuUs5vxpkO/ZKtTkfnPy5/J3BjWdlvPhhxmUbeqNyRuXPBzffZdBnWTmPN70x67ljr0Sb84HJbeUMvVfouY18lRV31Z5ZOY+TDb2ROfa7mbjnjr3zrt/Fn0u4S+FR9oCsdzrvcOeZjFcv6LucdQ4dM6H/dCb0XSarfjV3vRJtvIucevYO/dWZuCeZH69/k+1m+91M3Ecbdc6uc2Y2l8AXM3e9seKYlcixW81Z59AxE/q7ZbLqV/NKH21WfAT91Zmoj7adJ9lmtmfWbsY59Fne7Um1c5f5t9EXRC+pPJ1TbdQpmR+v9z17Z7z+vas8uywr53GyqZzReYNeb8h4GT8/y9pFjj5zXSb0u1m7ymlHxusf6LqsuFNm3Mym61fzbE+4q9i9e3h4eHgo+AbL2oJDaseRFAAAAABJRU5ErkJggg==';
 	}());
 	function showBlocks(n) {
-		barFill.style.width = (Math.max(0, Math.min(BLOCKS, n)) * BLOCK_PX) + 'px';
+		barFill.style.width = (Math.max(0, Math.min(BLOCKS + EXTRA_BLOCKS, n)) * BLOCK_PX) + 'px';
 	}
 
 	function setStatusMode(mode) {
@@ -278,7 +279,7 @@ const engine = new Engine(GODOT_CONFIG);
 		}
 	} else {
 		setStatusMode('progress');
-		const MIN_SHOW_MS = 5000;
+		const MIN_SHOW_MS = 4000;
 		const shownAt = performance.now();
 		engine.startGame({
 			'onProgress': function (current, total) {
@@ -295,8 +296,20 @@ const engine = new Engine(GODOT_CONFIG);
 				}
 			},
 		}).then(() => {
-			// Keep the loader (and the credit) up for at least 5 seconds so it can be read.
-			const left = Math.max(0, MIN_SHOW_MS - (performance.now() - shownAt));
+			// Keep the loader (and the credit) up for at least 4 seconds so it can be read. If loading finished
+			// early, the two extra blocks fill in just before the start screen; if it took longer, just go.
+			if (waiting !== null) {
+				clearInterval(waiting);
+				waiting = null;
+			}
+			const left = MIN_SHOW_MS - (performance.now() - shownAt);
+			if (left <= 0) {
+				setStatusMode('hidden');
+				return;
+			}
+			showBlocks(BLOCKS);
+			setTimeout(() => showBlocks(BLOCKS + 1), Math.max(0, left - 300));
+			setTimeout(() => showBlocks(BLOCKS + 2), Math.max(0, left - 150));
 			setTimeout(() => setStatusMode('hidden'), left);
 		}, displayFailureNotice);
 	}
