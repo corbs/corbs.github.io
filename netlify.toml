@@ -1,0 +1,4 @@
+# Sea Dragon is a static site: the game files are in the repo root, so there is nothing to build.
+[build]
+  command = "echo Static site - nothing to build"
+  publish = "."
